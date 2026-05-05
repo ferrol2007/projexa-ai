@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cine Booking – Main Page</title>
+<style>
+  body {
+    font-family:'Segoe UI',sans-serif;
+    margin:0;
+    color:#fff;
+    background:url('https://images.unsplash.com/photo-1517602302552-471fe67acf66?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(90deg, #fd5001, #ff00ff, #00ffff, #00ff00);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
+    color:#fff;
+    padding:15px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:1px;
+    text-shadow:1px 1px 3px rgba(0,0,0,0.8);
+    border-radius:10px;
+    margin:20px;
+  }
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Video Section */
+  .video-section {
+    display:flex;
+    justify-content:center;
+    margin:20px;
+  }
+  .video-section video {
+    width:80%;
+    max-width:800px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.6);
+  }
+
+  /* Big Button */
+  .buttons {
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .buttons a {
+    display:inline-block;
+    width:320px;
+    padding:25px;
+    font-size:26px;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff;
+    background: linear-gradient(90deg, #fd5001, #ff00ff, #00ffff, #00ff00);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
+    border-radius:50px;
+    transition:0.3s;
+    text-shadow:1px 1px 3px rgba(0,0,0,0.8);
+  }
+  .buttons a:hover {
+    opacity:0.85;
+    transform:scale(1.08);
+  }
+
+  /* Footer */
+  footer {
+    background:rgba(0,0,0,0.7);
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+    color:#ccc;
+    border-top:1px solid #444;
+    margin-top:auto; /* pushes footer to bottom */
+  }
+</style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    🎬 Cine Booking
+  </header>
+
+  <!-- Video Section -->
+  <div class="video-section">
+    <video autoplay muted loop controls>
+      <source src="videos/intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Big Button -->
+  <div class="buttons">
+    <a href="movies.html">🎥 Explore Movies</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>📞 Contact Us: support@cinebooking.com | +91-9876543210</p>
+    <p>© 2026 Cine Booking. All rights reserved.</p>
+  </footer>
+</body>
+</html>
